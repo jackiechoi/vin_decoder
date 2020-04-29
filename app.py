@@ -53,7 +53,7 @@ def mercedes_check(vin, year):
 				if mercedes_list.index(element) < 11:
 					cable = cable_list[0]
 				else: cable = 'Check the Mercedes-Benz Portal for FMS'
-		return f"<h1>Country: {country} </br>Make/Model: Mercedes-Benz {model} </br>Year: {year} (not 100% accurate) </br>Cable: {cable}</h1>"
+		return f"<h1>Country: {country} </br>Make/Model: Mercedes-Benz {model} </br>Cable: {cable}</h1>"
 	else: 
 		return nested_check(vin, model, country, year, cable)
 
@@ -77,7 +77,7 @@ def nested_check(vin, model, country, year, cable):
 	if country=="N/A": 
 		return c_check(vin, model, country, year)
 	else: 
-		return f"<h1>Country: {country} </br>Make/Model: {model} </br>Year: {year} (not 100% accurate) </br>Cable: {cable}</h1>"
+		return f"<h1>Country: {country} </br>Make/Model: {model} </br>Cable: {cable}</h1>"
 
 def c_check(vin, model, country, year):
 	if vin[0] not in country_char[15:24]: 
